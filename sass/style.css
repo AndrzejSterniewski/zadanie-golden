@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab&display=swap");
+.header {
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  margin: auto;
+}
+
+.header .logo-container .logo {
+  /* Style for "Golden" */
+  width: 79px;
+  height: 28px;
+  color: #fed136;
+  color: #ffffff;
+  font-family: "Wisdom - Script";
+  font-size: 26px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 41px;
+  text-align: left;
+  /* Text style for "G, olden" */
+  color: #fed136;
+  font-style: normal;
+  letter-spacing: 1.3px;
+  line-height: normal;
+  justify-content: flex-start;
+}
+
+.navigation {
+  justify-content: flex-end;
+}
+
+.navigation .menu {
+  text-align: right;
+}
+
+.navigation .menu li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0 40px;
+}
+
+.header .navigation .menu a {
+  text-transform: uppercase;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
