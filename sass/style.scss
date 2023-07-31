@@ -47,21 +47,60 @@ justify-content: flex-start;
     text-decoration: none;
 }
 
+
+/* Home section */
+
+.home .page-subtitle {
+    /* Style for "Welcome To" */
+width: 430px;
+height: 32px;
+color: #ffffff;
+font-family: "Droid Serif";
+font-size: 40px;
+font-style: italic;
+letter-spacing: normal;
+line-height: normal;
+text-align: center;
+/* Text style for "W, elcome" */
+font-style: normal;
+letter-spacing: -1px;
+line-height: normal;
+}
+
+.home .page-title {
+    /* Style for "It’s nice" */
+width: 844px;
+height: 55px;
+color: #ffffff;
+font-family: Montserrat;
+font-size: 75px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+text-align: center;
+text-transform: uppercase;
+/* Text style for "It’s nice" */
+font-style: normal;
+letter-spacing: -1.88px;
+line-height: normal;
+}
+
 .home .home-inner .btn {
-    display: inline-block;
-    background: yellow;
-    min-width: 160px;
-    margin: 24px auto 0 auto;
-    padding: 16px;
-    border-radius: 5px;
-    font-size: 16px;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    border-width: 2px;
-    border-style: solid;
-    background-position: 100% 0;
-    background-size: 300%;
-    transition: $transition;
-    margin-top: 36px;
+    /* Style for "Tell Me Mo" */
+width: 138px;
+height: 14px;
+color: #ffffff;
+font-family: Montserrat;
+font-size: 18px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+text-align: center;
+text-transform: uppercase;
+/* Text style for "T, ell Me" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
 }
