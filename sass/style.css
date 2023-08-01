@@ -1,15 +1,39 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab&display=swap");
 /* Global */
+.body {
+  margin: 0;
+}
+
+.container {
+  margin: auto;
+}
+
 .section-title {
   text-transform: uppercase;
+  margin: auto;
+  justify-content: center;
+}
+
+.section-subtitle {
+  margin: auto;
+}
+
+.container {
+  margin: auto;
 }
 
 /* header */
 .header {
   background: rgba(0, 0, 0, 0);
   display: flex;
-  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.header .logo-container {
+  justify-content: flex-start;
+  border: 2px solid black;
 }
 
 .header .logo-container .logo {
@@ -30,7 +54,6 @@
   font-style: normal;
   letter-spacing: 1.3px;
   line-height: normal;
-  justify-content: flex-start;
 }
 
 .navigation {
@@ -38,7 +61,11 @@
 }
 
 .navigation .menu {
-  text-align: right;
+  border: 2px solid black;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 .navigation .menu li {
@@ -53,47 +80,38 @@
 }
 
 /* Home section */
+.home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  margin: auto;
+}
+
+.home .home-inner {
+  margin: auto;
+}
+
 .home .page-subtitle {
-  /* Style for "Welcome To" */
   width: 430px;
   height: 32px;
-  color: #ffffff;
   font-family: "Droid Serif";
   font-size: 40px;
   font-style: italic;
   letter-spacing: normal;
   line-height: normal;
   text-align: center;
-  /* Text style for "W, elcome" */
-  font-style: normal;
-  letter-spacing: -1px;
-  line-height: normal;
 }
 
 .home .page-title {
   /* Style for "It’s nice" */
-  width: 844px;
-  height: 55px;
-  color: #ffffff;
-  font-family: Montserrat;
   font-size: 75px;
-  font-weight: 700;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
-  text-align: center;
-  text-transform: uppercase;
-  /* Text style for "It’s nice" */
-  font-style: normal;
-  letter-spacing: -1.88px;
-  line-height: normal;
 }
 
 .home .home-inner .btn {
-  /* Style for "Tell Me Mo" */
   width: 138px;
   height: 14px;
   color: #ffffff;
+  background: #fed136;
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 700;
@@ -102,10 +120,21 @@
   line-height: normal;
   text-align: center;
   text-transform: uppercase;
-  /* Text style for "T, ell Me" */
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
+  text-decoration: none;
+  padding: 25px 51px;
+}
+
+/* Services */
+.service-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service-column {
+  flex: 0 0 33.333%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* portfolio */
@@ -116,8 +145,28 @@
   background-color: #f7f7f7;
 }
 
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 0 0 33.3333%;
+}
+
 /* footer bottom */
-.footer-bottom li {
+.footer-bottom {
   display: inline-block;
+}
+
+.copyright {
+  justify-content: left;
+}
+
+.footer-links {
+  justify-content: right;
+}
+
+.footer-bottom li {
+  display: inline;
   list-style-type: none;
 }/*# sourceMappingURL=style.css.map */
