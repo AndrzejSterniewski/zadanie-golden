@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab&display=swap');
 
+
+/* Global */
+
+.section-title {
+    text-transform: uppercase;
+}
+
+.section-subtitle {
+    
+}
+
+
 /* header */
 
 .header {
@@ -109,6 +121,15 @@ line-height: normal;
 
 
 
+
+/* portfolio */
+
+.portfolio {
+    /* Style for "Background" */
+    width: 1557px;
+    height: 1218px;
+    background-color: #f7f7f7;
+}
 
 
 /* footer bottom */
