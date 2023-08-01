@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab&display=swap');
 
+/* header */
+
 .header {
     background: #0000;
     display: flex;
@@ -103,4 +105,15 @@ text-transform: uppercase;
 font-style: normal;
 letter-spacing: normal;
 line-height: normal;
+}
+
+
+
+
+
+/* footer bottom */
+
+.footer-bottom li {
+    display: inline-block;
+    list-style-type: none;
 }
