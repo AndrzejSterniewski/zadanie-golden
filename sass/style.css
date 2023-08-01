@@ -7,16 +7,18 @@
 
 .container {
   margin: auto;
+  text-align: center;
 }
 
 .section-title {
   text-transform: uppercase;
   margin: auto;
-  justify-content: center;
+  text-align: center;
 }
 
 .section-subtitle {
   margin: auto;
+  text-align: center;
 }
 
 .container {
@@ -34,6 +36,7 @@
 .header .logo-container {
   justify-content: flex-start;
   border: 2px solid black;
+  align-self: center;
 }
 
 .header .logo-container .logo {
@@ -58,6 +61,7 @@
 
 .navigation {
   justify-content: flex-end;
+  align-self: center;
 }
 
 .navigation .menu {
@@ -84,7 +88,7 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  margin: auto;
+  flex-direction: column;
 }
 
 .home .home-inner {
@@ -139,10 +143,11 @@
 
 /* portfolio */
 .portfolio {
-  /* Style for "Background" */
-  width: 1557px;
-  height: 1218px;
   background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .row {
@@ -151,6 +156,11 @@
 
 .col {
   flex: 0 0 33.3333%;
+  background: #ffffff;
+  text-align: center;
+  margin: 20px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* footer bottom */
