@@ -27,9 +27,9 @@ $font-first: 'Monteserrat';
 
 .start-section {
     // display: flex;
+    // flex-direction: column;
 
-    width: auto;
-    height: 729px;
+    height: 100vh;
     background-image: url('../images/Background_Image.png');
     background-size: cover;
 }
@@ -79,7 +79,6 @@ line-height: normal;
     // height: 10px;
     color: #ffffff;
     font-family: Montserrat;
-    font-size: 14px;
     font-weight: 400;
     font-style: normal;
     letter-spacing: normal;
@@ -99,16 +98,13 @@ line-height: normal;
 .home .home-inner {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: auto;
     align-items: center;
-    
-    // justify-content: center;
 }
 
 .home .page-subtitle {
-width: 430px;
-height: 32px;
-// color: #ffffff;
+color: #ffffff;
 font-family: "Droid Serif";
 font-size: 40px;
 font-style: italic;
@@ -118,9 +114,6 @@ text-align: center;
 }
 
 .home .page-title {
-    /* Style for "It’s nice" */
-// width: 844px;
-// height: 55px;
 color: #ffffff;
 font-family: Montserrat;
 font-size: 75px;
@@ -130,10 +123,6 @@ letter-spacing: normal;
 line-height: normal;
 text-align: center;
 text-transform: uppercase;
-// /* Text style for "It’s nice" */
-// font-style: normal;
-// letter-spacing: -1.88px;
-// line-height: normal;
 }
 
 .home .home-inner .btn {
@@ -159,15 +148,15 @@ text-transform: uppercase;
     height: 568px;
     display: flex;
     flex-wrap: wrap;
-    // flex-direction: column;
-    // justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .service-columns {
     display: flex;
-    // // flex-wrap: wrap;
-    // // flex-direction: column;
-    // // justify-content: space-between;
+    flex-wrap: wrap;
+    // flex-direction: column;
+    // justify-content: space-between;
     // box-sizing: border-box;
     // margin: auto;
 }
