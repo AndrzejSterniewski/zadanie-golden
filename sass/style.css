@@ -64,7 +64,7 @@
 
 .navigation .menu li {
   display: inline-block;
-  padding: 0 40px;
+  padding: 0 1rem;
 }
 
 .header .navigation .menu a {
@@ -81,6 +81,11 @@
 }
 
 /* Home section */
+.home {
+  display: flex;
+  height: inherit;
+}
+
 .home .home-inner {
   display: flex;
   flex-direction: column;
@@ -101,8 +106,15 @@
 
 .home .page-title {
   /* Style for "It’s nice" */
+  color: #ffffff;
+  font-family: Montserrat;
   font-size: 75px;
   font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .home .home-inner .btn {

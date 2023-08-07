@@ -26,6 +26,8 @@ $font-first: 'Monteserrat';
 /* start section */
 
 .start-section {
+    // display: flex;
+
     width: auto;
     height: 729px;
     background-image: url('../images/Background_Image.png');
@@ -69,7 +71,7 @@ line-height: normal;
 .navigation .menu li {
     display: inline-block;
     // list-style-type: none;
-    padding: 0 40px;
+    padding: 0 1rem;
 }
 
 .header .navigation .menu a {
@@ -89,9 +91,10 @@ line-height: normal;
 
 /* Home section */
 
-// .home {
-//     display: flex;
-// }
+.home {
+    display: flex; 
+    height: inherit;
+}
 
 .home .home-inner {
     display: flex;
@@ -118,15 +121,15 @@ text-align: center;
     /* Style for "It’s nice" */
 // width: 844px;
 // height: 55px;
-// color: #ffffff;
-// font-family: Montserrat;
+color: #ffffff;
+font-family: Montserrat;
 font-size: 75px;
 font-weight: 700;
-// font-style: normal;
-// letter-spacing: normal;
-// line-height: normal;
-// text-align: center;
-// text-transform: uppercase;
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+text-align: center;
+text-transform: uppercase;
 // /* Text style for "It’s nice" */
 // font-style: normal;
 // letter-spacing: -1.88px;
