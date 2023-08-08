@@ -4,9 +4,12 @@ $font-first: 'Monteserrat';
 
 /* Global */
 
+html {
+    font-size: 14px;
+}
+
 .body {
     margin: 0;
-    font-size: 14px;
 }
 
 .section-title {
@@ -19,14 +22,15 @@ $font-first: 'Monteserrat';
     color: #777777; 
 }
 
-.container {
-    margin: auto;
-}
-
 /* start section */
 
 .start-section {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
+    min-height: 800px;
+    // jakiś min-height ustawić 800px
+    // ewetnualnie zmienić wielkość czcionki
     background-image: url('../images/Background_Image.png');
     background-size: cover;
 }
@@ -85,7 +89,8 @@ line-height: normal;
 
 .home {
     display: flex; 
-    height: inherit;
+    flex-grow: 1;
+    // wykorzystuje maksymalna wolną przestrzeń
 }
 
 .home .home-inner {
@@ -138,11 +143,10 @@ line-height: normal;
 /* Services */
 
 .services {
-    height: 568px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
+    // display: flex;
+    // flex-wrap: wrap;
+    // flex-direction: column;
+    // justify-content: center;
 }
 
 .service-columns {
@@ -197,28 +201,32 @@ line-height: normal;
 .footer-bottom {
     height: 120px;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+    justify-content: space-between;
 }  
 
 .copyright {
-
+    display: flex;
+    flex: 0 0 33.3333%;
+    justify-content: center;
 }
 
 .footer-links {
-
+    margin: 0 auto;
 }
 
 .footer-bottom li {
     display: inline;
-    list-style-type: none;
 }
 
 .footer-links {
     display: flex;
-    justify-self: center;
+    flex: 0 0 33.3333%;
+    justify-content: center;
+}
+
+.footer-links ul {
+    padding: 0;
 }
 
 .footer-links i {
@@ -229,4 +237,9 @@ line-height: normal;
     color: #ffffff;
     border-radius: 50%;
     text-align: center;
+}
+
+.empty-footer-div {
+    display: flex;
+    flex: 0 0 33.3333%;
 }
