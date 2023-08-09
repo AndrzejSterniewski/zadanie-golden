@@ -233,4 +233,17 @@ html {
     flex: 0 0 100%;
     order: 1;
   }
+}
+@media (max-width: 1009px) {
+  .service-column {
+    flex: 0 0 50%;
+  }
+  .service-column:last-of-type {
+    flex: 0 0 100%;
+  }
+}
+@media (max-width: 677px) {
+  .service-column {
+    flex: 0 0 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

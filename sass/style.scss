@@ -140,13 +140,6 @@ line-height: normal;
 
 /* Services */
 
-.services {
-    // display: flex;
-    // flex-wrap: wrap;
-    // flex-direction: column;
-    // justify-content: center;
-}
-
 .service-columns {
     display: flex;
     flex-wrap: wrap;
@@ -254,5 +247,21 @@ line-height: normal;
     .copyright {
         flex: 0 0 100%;
         order: 1;
+    }
+}
+
+@media (max-width: 1009px) {
+    .service-column {
+        flex: 0 0 50%;
+    }
+
+    .service-column:last-of-type {
+        flex: 0 0 100%;
+    }
+}
+
+@media (max-width: 677px) {
+    .service-column {
+        flex: 0 0 100%;
     }
 }
