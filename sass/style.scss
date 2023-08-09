@@ -29,8 +29,6 @@ html {
     flex-direction: column;
     height: 100vh;
     min-height: 800px;
-    // jakiś min-height ustawić 800px
-    // ewetnualnie zmienić wielkość czcionki
     background-image: url('../images/Background_Image.png');
     background-size: cover;
 }
@@ -90,7 +88,7 @@ line-height: normal;
 .home {
     display: flex; 
     flex-grow: 1;
-    // wykorzystuje maksymalna wolną przestrzeń
+    // wykorzystuje maksymalną wolną przestrzeń
 }
 
 .home .home-inner {
@@ -201,6 +199,7 @@ line-height: normal;
 .footer-bottom {
     height: 120px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }  
@@ -209,6 +208,7 @@ line-height: normal;
     display: flex;
     flex: 0 0 33.3333%;
     justify-content: center;
+    align-items: center;
 }
 
 .footer-links {
@@ -223,6 +223,7 @@ line-height: normal;
     display: flex;
     flex: 0 0 33.3333%;
     justify-content: center;
+    align-items: center;
 }
 
 .footer-links ul {
@@ -242,4 +243,16 @@ line-height: normal;
 .empty-footer-div {
     display: flex;
     flex: 0 0 33.3333%;
+}
+
+@media (max-width: 674px) {
+    .footer-links {
+        flex: 0 0 100%;
+        order: 0;
+    }
+
+    .copyright {
+        flex: 0 0 100%;
+        order: 1;
+    }
 }
